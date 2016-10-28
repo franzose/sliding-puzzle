@@ -14,9 +14,9 @@ body {
 }
 
 .is-hidden { display: none !important; }
-//.is-visible { display: block !important; }
 
 @import "layout";
 @import "game";
 @import "controls";
 @import "results";
+@import "github-link";

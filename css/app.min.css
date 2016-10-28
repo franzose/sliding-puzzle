@@ -1,2 +1,69 @@
-.controls__button,body{font-family:Monaco,monospace}*{margin:0;padding:0}*,:after,:before{box-sizing:border-box}body{background:#272727;color:#fff}.is-hidden{display:none!important}.layout{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;align-content:center;-webkit-box-align:center;align-items:center;width:100vw;height:100vh}.game{color:#000}.game__square.is-selected{stroke:#19a5e4;stroke-width:5;stroke-opacity:.5}.controls{margin-top:3rem;text-align:center}.controls__button{display:block;margin:auto;padding:.5rem 1rem;font-size:1rem;border:0;border-radius:4px;cursor:pointer;outline:0}.controls__launch{background:#ccdb38}.controls__time{margin-bottom:1rem}.controls__stop{color:#fff;background:#ef4423}.results{margin-top:2rem;text-align:center}.results__winner{letter-spacing:.15rem;text-transform:uppercase;color:#ffd121;text-shadow:0 1px 3px #000}
+* {
+  margin: 0;
+  padding: 0; }
+  *, *:before, *:after {
+    box-sizing: border-box; }
+
+body {
+  font-family: Monaco, monospace;
+  background: #272727;
+  color: #fff; }
+
+.is-hidden {
+  display: none !important; }
+
+.layout {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+
+.game {
+  color: #000; }
+  .game__square.is-selected {
+    stroke: #19a5e4;
+    stroke-width: 5;
+    stroke-opacity: .5; }
+
+.controls {
+  margin-top: 3rem;
+  text-align: center; }
+  .controls__button {
+    display: block;
+    margin: auto;
+    padding: .5rem 1rem;
+    font-family: Monaco, monospace;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; }
+  .controls__launch {
+    background: #ccdb38; }
+  .controls__time {
+    margin-bottom: 1rem; }
+  .controls__stop {
+    color: #fff;
+    background: #ef4423; }
+
+.results {
+  margin-top: 2rem;
+  text-align: center; }
+  .results__winner {
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: #ffd121;
+    text-shadow: 0 1px 3px #000; }
+
+.github-link__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0; }
+
 /*# sourceMappingURL=app.min.css.map */
