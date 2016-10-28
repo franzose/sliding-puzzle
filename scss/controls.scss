@@ -1,0 +1,23 @@
+.controls {
+    margin-top: 3rem;
+    text-align: center;
+
+    &__button {
+        display: block;
+        margin: auto;
+        padding: .5rem 1rem;
+        font-family: $font-family;
+        font-size: 1rem;
+        border: 0;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    &__launch { background: #ccdb38; }
+    &__time { margin-bottom: 1rem; }
+    &__stop {
+        color: #fff;
+        background: #ef4423;
+    }
+}

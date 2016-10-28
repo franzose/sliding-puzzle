@@ -1,0 +1,22 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    &, &:before, &:after { box-sizing: border-box; }
+}
+
+body {
+    font-family: $font-family;
+    background: #272727;
+    color: #fff;
+}
+
+.is-hidden { display: none !important; }
+//.is-visible { display: block !important; }
+
+@import "layout";
+@import "game";
+@import "controls";
+@import "results";

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Puzzle</title>
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="layout">
+    <div>
+        <svg id="container"
+             class="game"
+             xmlns="http://www.w3.org/2000/svg"
+             width="215"
+             height="215"></svg>
+        <div class="controls">
+            <button id="launch" class="controls__launch controls__button">Play</button>
+            <div id="time-container" class="controls__time is-hidden">Timing: <span id="time">00:00:00</span></div>
+            <button id="stop" class="controls__stop controls__button is-hidden">Stop the Game</button>
+        </div>
+        <div id="results" class="results"></div>
+    </div>
+</div>
+<script src="scripts/app.min.js"></script>
+</body>
+</html>
