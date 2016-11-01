@@ -142,13 +142,13 @@ export default function(container, size) {
             squareBox = square.tbox();
 
         empty.animate(constants.animation.MOVE_DURATION).attr({
-            x: squareBox.x,
-            y: squareBox.y
+            x: squareBox.x - 1,
+            y: squareBox.y - 1
         });
 
         square.animate(constants.animation.MOVE_DURATION).attr({
-            x: emptyBox.x,
-            y: emptyBox.y
+            x: emptyBox.x - 1,
+            y: emptyBox.y - 1
         });
 
         reindexSquares(square);
