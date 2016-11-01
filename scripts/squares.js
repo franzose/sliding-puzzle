@@ -6,6 +6,7 @@ import { inArray, getRandomGameNumbers } from './functions';
 export default function(container, size) {
     let squares = [],
         emptySquare,
+        emptySquareTemplate = images.empty.replace('id="empty-square"', ''),
         squareClass = 'game__square',
         isMoving = false;
 
@@ -54,7 +55,7 @@ export default function(container, size) {
             let x = size * leftIndex,
                 y = size * topIndex;
 
-            group.svg(images.empty);
+            group.svg(emptySquareTemplate);
             squares[idx] = group.get(idx)
                 .addClass(squareClass)
                 .attr({ x, y });

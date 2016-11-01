@@ -14,9 +14,6 @@ export default function(container) {
         squares = new Squares(game, constants.dimensions.SQUARE_SIZE + constants.dimensions.SQUARE_MARGIN),
         timer = new Timer();
 
-    // Add a reusable rectangle to the SVG's definitions
-    game.defs().svg(images.rectangle);
-
     this.launch = () => {
         moves = 0;
         started = true;
