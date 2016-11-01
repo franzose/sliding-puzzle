@@ -19,7 +19,9 @@ window.onload = (undefined) => {
             .replace('{{time_text}}', constants.strings.TIME),
         game = new Game(container);
 
+    launch.addEventListener('touchstart', game.launch);
     launch.addEventListener('click', game.launch);
+    stop.addEventListener('touchstart', game.stop);
     stop.addEventListener('click', game.stop);
 
     game.onLaunch = () => {

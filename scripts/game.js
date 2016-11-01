@@ -45,7 +45,10 @@ export default function(container) {
     // Handles mouse activities on the game surface.
     // Once a square is clicked, it's checked upon movability or emptiness
     // and then it's eigther selected or moved to a new position
-    container.addEventListener('mousedown', (event) => {
+    container.addEventListener('touchstart', move);
+    container.addEventListener('mousedown', move);
+
+    function move(event) {
         if ( ! started) {
             return;
         }
@@ -61,16 +64,20 @@ export default function(container) {
         } else if (squares.isEmpty(square) && squares.move(squares.deselect())) {
             countMove();
         }
-    });
+    }
 
     // Handles mouse activities outside the game surface
-    document.addEventListener('mousedown', (event) => {
+    document.addEventListener('touchstart', deselect);
+    document.addEventListener('mousedown', deselect);
+
+    function deselect(event) {
         if ( ! started || event.target.closest('#container')) {
             return;
         }
 
+        event.preventDefault();
         squares.deselect();
-    });
+    }
 
     // Handles keyboard activities, allowing to play by using left-right-top-bottom keys
     document.addEventListener('keydown', (event) => {
