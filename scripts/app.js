@@ -26,6 +26,7 @@ window.onload = (undefined) => {
         launch.classList.add(constants.classes.HIDDEN);
         timeContainer.classList.remove(constants.classes.HIDDEN);
         stop.classList.remove(constants.classes.HIDDEN);
+        results.innerHTML = '';
     };
 
     game.onEach = (seconds) => {
