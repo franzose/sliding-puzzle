@@ -53,6 +53,8 @@ export default function(container) {
             return;
         }
 
+        event.preventDefault();
+
         let square = squares.getSquareByNode(event.target);
 
         if ( ! square) {
