@@ -32,10 +32,11 @@ body {
   display: block;
   margin: auto;
   color: #000; }
-  .game__square.is-selected {
-    stroke: #19a5e4;
-    stroke-width: 5;
-    stroke-opacity: .5; }
+  .game__square.is-selected > text {
+    fill: #fff; }
+  .game__square.is-selected > rect {
+    fill: #8bc34a;
+    stroke: #8bc34a; }
 
 .controls {
   margin-top: 3rem;

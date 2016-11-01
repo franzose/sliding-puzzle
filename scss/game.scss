@@ -3,11 +3,11 @@
     margin: auto;
     color: #000;
 
-    &__square {
-        &.is-selected {
-            stroke: #19a5e4;
-            stroke-width: 5;
-            stroke-opacity: .5;
+    &__square.is-selected {
+        > text { fill: #fff; }
+        > rect {
+            fill: #8bc34a;
+            stroke: #8bc34a;
         }
     }
 }
