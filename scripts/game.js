@@ -77,7 +77,6 @@ export default function(container) {
             return;
         }
 
-        event.preventDefault();
         squares.deselect();
     }
 
