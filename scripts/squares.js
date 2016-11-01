@@ -6,7 +6,8 @@ import { inArray, getRandomGameNumbers } from './functions';
 export default function(container, size) {
     let squares = [],
         emptySquare,
-        squareClass = 'game__square';
+        squareClass = 'game__square',
+        isMoving = false;
 
     // Draws random set of squares on the game scene
     this.draw = () => {
@@ -132,6 +133,8 @@ export default function(container, size) {
             return false;
         }
 
+        isMoving = true;
+
         empty = empty || getEmptySvgSquare();
 
         let emptyBox = empty.tbox(),
@@ -149,8 +152,14 @@ export default function(container, size) {
 
         reindexSquares(square);
 
+        setTimeout(() => {
+            isMoving = false;
+        }, constants.animation.MOVE_DURATION + 50);
+
         return true;
     };
+
+    this.isMoving = () => isMoving;
 
     function getEmptySvgSquare() {
         if ( ! emptySquare) {

@@ -77,7 +77,7 @@ export default function(container) {
 
     // Handles keyboard activities, allowing to play by using left-right-top-bottom keys
     document.addEventListener('keydown', (event) => {
-        if ( ! started) {
+        if ( ! started || squares.isMoving()) {
             return;
         }
 
