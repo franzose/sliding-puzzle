@@ -1,3 +1,5 @@
+[![](https://img.shields.io/npm/dt/sliding-puzzle.svg)](https://www.npmjs.com/package/sliding-puzzle)
+
 # Sliding Puzzle
 What is it?
 
